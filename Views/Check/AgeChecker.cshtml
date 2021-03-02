@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Result";
+}
+<h2>Result</h2>
+<p>
+    @if (int.Parse(ViewBag.ModelAge) >= 18)
+    {
+        <p>Welcome to this club. What drink would you like to order?</p>
+    }
+    else
+    {
+        <p>Sorry. You are not old enough to be here.</p>
+    }
+</p>
