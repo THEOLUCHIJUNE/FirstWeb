@@ -1,3 +1,4 @@
+using System.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,8 @@ namespace FirstWeb
         {
             services.AddControllersWithViews();
 
-            services.AddSingleton<ICheckLegalAge, CheckLegalAge>();
+            services.AddSingleton<IAge, AgeChecker>();
+            services.AddSingleton<IConvertToDollars, ConvertNaira>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,8 +1,8 @@
 namespace FirstWeb.Models
 {
-    public class TellAge
+    public class Age
     {
-        public string Age { get; set; }
+        public string AgeOfCustomer { get; set; }
         public string AboveEighteen { get; set; }
         
         

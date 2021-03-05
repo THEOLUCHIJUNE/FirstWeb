@@ -3,9 +3,9 @@ using FirstWeb.Models;
 
 namespace FirstWeb.Services
 {
-    public class CheckLegalAge : ICheckLegalAge
+    public class AgeChecker : IAge
     {
-        public string CheckLegalAgeForPass(TellAge model)
+        public string CheckAge (Age model)
         {
             return "Welcome to June's club. hat drink would you like to order? ";
         }

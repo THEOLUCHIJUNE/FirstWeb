@@ -4,11 +4,11 @@ using FirstWeb.Models;
 
 namespace FirstWeb.Controllers
 {
-    public class TellController : Controller
+    public class ClubController : Controller
     {
-        private readonly ICheckLegalAge _repo;
+        private readonly IAge _repo;
 
-        public TellController(ICheckLegalAge repo)
+        public ClubController(IAge repo)
         {
             _repo = repo;
         }
@@ -19,11 +19,11 @@ namespace FirstWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult AgeChecker(TellAge model)
+        public IActionResult agechecker(Age model)
         {
-            var result = _repo.CheckLegalAgeForPass(model);
+            var result = _repo.CheckAge(model);
 
-            ViewBag.ModelAge = model.Age;
+            ViewBag.ModelAgeOfCustomer = model.AgeOfCustomer;
             ViewBag.ModelBelowEighteen = "Apologies, you are too young to be here.";
             ViewBag.ModelAboveEighteen = "Hey There. What drink would you like to order? ";
             return View();

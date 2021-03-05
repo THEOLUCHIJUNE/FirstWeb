@@ -1,4 +1,4 @@
-@model TellAge
+@model Age
 
 @{
     ViewData["Title"] = "Club";
@@ -7,8 +7,8 @@
 <h2>Hello, before you can gain access, you would have to confirm your age</h2>
 
 <h2>
-    <form asp-controller= "Club" asp-action = "checklegalage" method = "POST">
-    <input type="text" asp-for="Age" placeholder="TellAge">
+    <form asp-controller= "Club" asp-action = "agechecker" method = "POST">
+    <input type="text" asp-for="AgeOfCustomer" placeholder="Age">
     <button type="submit">CheckAge</button>
     </form>
 </h2>

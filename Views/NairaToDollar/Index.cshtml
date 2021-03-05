@@ -1,0 +1,13 @@
+@model CalculateDollar
+
+@{
+    ViewData["Title"] = "Convert To Dollars";
+}
+
+<h2>Convert Naira To Dollar</h2>
+<h2>Exchange rate is 432 Naira</h2>
+
+<form asp-controller= "NairaToDollar" asp-action = "Convert" method = "POST">
+    <input type="text" asp-for="Naira" placeholder="Amount In Naira">
+    <button type="submit">Convert</button>
+</form>

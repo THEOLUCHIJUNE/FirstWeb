@@ -19,7 +19,6 @@ C:\Users\JUNE\FirstWeb\bin\Debug\netcoreapp3.1\FirstWeb.Views.pdb
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.TagHelpers.input.cache
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.TagHelpers.output.cache
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.RazorCoreGenerate.cache
-C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Check\Index.cshtml.g.cs
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -36,4 +35,7 @@ C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.dll
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.pdb
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.genruntimeconfig.cache
 C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\FirstWeb.csproj.CopyComplete
-C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Check\AgeChecker.cshtml.g.cs
+C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\NairaToDollar\Convert.cshtml.g.cs
+C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\NairaToDollar\Index.cshtml.g.cs
+C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Club\agechecker.cshtml.g.cs
+C:\Users\JUNE\FirstWeb\obj\Debug\netcoreapp3.1\Razor\Views\Club\Index.cshtml.g.cs
