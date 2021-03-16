@@ -1,0 +1,39 @@
+@model FirstWeb.Models.Person
+
+@{
+    ViewData["Title"] = "Add Information";
+}
+
+<div class="insert-container">
+    <div class="form-container">
+        <div class="heading">
+            <h5>Dear Admin</h5>
+            <h3>Add details here</h3>
+        </div>
+        <form asp-controller="Information" asp-action="Add" class="form" method="post">
+            @if (ViewBag.SuccessMessage != null)
+            {
+                <h1 class="viewbagsuccess">@ViewBag.SuccessMessage</h1>
+            }
+            else
+            {
+                <div asp-validation-summary="All"></div>
+            }
+            <div class="image">
+                <input type="text" asp-for="FullName" placeholder="Full Name"/>
+            </div>
+            <div class="image">
+                <input type="text" asp-for="Age" placeholder="Age"/>
+            </div>
+            <div class="image">
+                <input type="text" asp-for="RoomNumber" placeholder="Room Number"/>
+            </div>
+            <div class="image">
+                <input type="text" asp-for="Amount" placeholder="Amount"/>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a asp-controller="Information" asp-action="Index">Go Back</a>
+    </div>
+
+</div>

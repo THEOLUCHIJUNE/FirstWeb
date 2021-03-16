@@ -1,0 +1,44 @@
+@model FirstWeb.Models.Person
+
+@{
+    ViewData["Title"] = "Person Information";
+}
+
+    <div class="container">
+        <div class="wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Age</th>
+                        <th>Amount</th>
+                        <th>Room Number</th>
+                        <th colspan="2">Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Id</td>
+                        <td>
+                            @Model.FullName
+                        </td>
+                        <td>@Model.Age</td>
+                        <td>@Model.RoomNumber</td>
+                        <td>@Model.Amount</td>
+                        <td>
+                            <a asp-controller="Information" asp-action="Update" asp-route-id="@Model.Id">
+                                Update
+                            </a>
+                        </td>
+                        <td>
+                            <a asp-controller="Information" asp-action="Delete" asp-route-id="@Model.Id">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>   
+                </tbody>
+            </table>
+            <a asp-controller="Information" asp-action="Index">Go Back</a>
+        </div>
+    </div>

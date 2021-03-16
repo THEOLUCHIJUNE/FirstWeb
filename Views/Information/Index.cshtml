@@ -1,0 +1,38 @@
+@model List<FirstWeb.Models.Person>
+
+@{
+    ViewData["Title"] = "Rent List";
+}
+
+    <div class="container">
+        <a asp-controller="Information" asp-action="Add">Create New Person</a>
+        <div class="wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        @*<th>Age</th>
+                        <th>Amount</th>
+                        <th>Room Number</th>*@
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>
+                            <a asp-controller="Information" asp-action="Person" asp-route-id="@item.Id">
+                                @item.FullName
+                            </a>
+                        </td>
+                        @*<td>@item.Age</td>
+                        <td>@item.RoomNumber</td>
+                        <td>@item.Amount</td>*@
+                    </tr>
+                }    
+                </tbody>
+            </table>
+        </div>
+    </div>

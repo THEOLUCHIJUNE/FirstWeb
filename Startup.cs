@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using FirstWeb.DatabaseContext;
 using FirstWeb.Interface;
 using FirstWeb.Services;
 
@@ -28,8 +30,12 @@ namespace FirstWeb
         {
             services.AddControllersWithViews();
 
+            services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApplicationConnection")
+            ));
+
             services.AddSingleton<IAge, AgeChecker>();
             services.AddSingleton<IConvertToDollars, ConvertNaira>();
+            services.AddScoped<IRentInformationService, RentInformationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
